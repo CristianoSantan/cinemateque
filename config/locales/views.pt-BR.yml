@@ -21,3 +21,11 @@ pt-BR:
     create:
       success: 'Filme adicionado com sucesso.'
       failure: 'Filme não foi adicionado.'
+  sessions:
+    new:
+      title: 'Nova Sessão'
+    index: 
+      title: 'Sessões'
+    create:
+      success: 'Sessão adicionada com sucesso.'
+      failure: 'Sessão não foi adicionado.'
