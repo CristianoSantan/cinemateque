@@ -13,8 +13,10 @@ describe "Movie Theater API" do
       json_response = JSON.parse(response.body)
       expect(json_response["name"]).to include('Cine Paradiso')
       expect(json_response["city"]).to include('Brasília')
-      expect(json_response["room"][0]["name"]).to include('Sala 01')
-      expect(json_response["room"][0]["capacity"]).to include(100)
+      expect(json_response["rooms"].class).to eq Array
+      expect(json_response["rooms"].length).to eq 1
+      expect(json_response["rooms"][0]["name"]).to include('Sala 01')
+      expect(json_response["rooms"][0]["capacity"]).to eq(100)
       expect(json_response.keys).not_to include('updated_at')
       expect(json_response.keys).not_to include('created_at')
     end
