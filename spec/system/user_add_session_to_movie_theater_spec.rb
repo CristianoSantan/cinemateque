@@ -13,7 +13,7 @@ describe 'Add session to movie theater' do
       click_on 'Cinemas'
     end
     click_on 'Cine Paradiso'
-    click_on 'Adicionar Session'
+    click_on 'Adicionar Sessão'
     fill_in 'Dia', with: 'segunda-feira'
     fill_in 'Hora', with: '19:00'
     select 'Jurassic Park', from: 'Filme'
